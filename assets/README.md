@@ -2,11 +2,13 @@
 
 Este diretório é reservado exclusivamente para recursos preparados para publicação.
 
-## Política atual
+## Conteúdo atual
 
-Nenhuma captura administrativa original deve ser adicionada. A documentação utiliza diagramas Mermaid genéricos para evitar exposição de identidades, domínios, URLs, grupos, permissões e postura operacional.
+`evidence/` contém uma seleção pequena de capturas tratadas para demonstrar visualmente as interfaces e verificações utilizadas. Nenhum arquivo original pertence ao repositório.
 
-## Requisitos para uma futura imagem
+Os arquivos foram exportados como novas imagens, com metadados removidos. Nomes, contas, domínios, URLs, quantidades, datas, valores DNS, parâmetros operacionais e relações de acesso foram omitidos ou substituídos por elementos genéricos.
+
+## Requisitos para qualquer imagem
 
 - origem e finalidade documentadas;
 - conteúdo necessário para comprovar uma atividade;
@@ -17,4 +19,4 @@ Nenhuma captura administrativa original deve ser adicionada. A documentação ut
 - revisão humana antes do commit;
 - autorização de publicação confirmada.
 
-Arquivos brutos devem permanecer fora do Git.
+Arquivos brutos e a correspondência entre dados reais e rótulos genéricos devem permanecer fora do Git.

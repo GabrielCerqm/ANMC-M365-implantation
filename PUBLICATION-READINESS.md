@@ -11,6 +11,7 @@ A autorização escrita do cliente está em análise. Até que ela seja recebida
 - Autorização escrita ainda não confirmada.
 - Nome atual do repositório contém um identificador associado ao projeto e deve ser substituído por um nome genérico antes da publicação.
 - Evidência atualizada do Secure Score ainda não foi confirmada.
+- Capturas tratadas foram adicionadas, mas ainda exigem revisão humana final antes da mudança de visibilidade.
 - Revisão humana final de todo o histórico Git ainda não foi realizada.
 
 ## Nome público recomendado
@@ -24,6 +25,8 @@ m365-sharepoint-exchange-implementation
 - [ ] Autorização escrita recebida e arquivada fora do Git.
 - [ ] Repositório renomeado para um identificador genérico.
 - [ ] Ausência de imagens administrativas originais confirmada.
+- [ ] Cada captura tratada revisada em resolução original.
+- [ ] Texto residual das imagens verificado por inspeção e OCR.
 - [ ] Ausência de nomes, domínios, e-mails e URLs reais confirmada.
 - [ ] Ausência de quantidades que possam identificar a organização confirmada.
 - [ ] Ausência de matriz real de permissões confirmada.

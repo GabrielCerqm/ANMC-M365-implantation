@@ -78,6 +78,26 @@ Nenhum nome, domínio, endereço, grupo, biblioteca, pasta ou parâmetro real do
 - PowerShell para consultas de resolução DNS
 - Git e GitHub para documentação técnica
 
+## Evidências visuais tratadas
+
+Uma seleção reduzida de capturas foi incluída para contextualizar a execução prática. Todas foram recortadas ou reconstruídas para remover nomes, contas, domínios, URLs, quantidades, valores DNS, datas, relações de acesso e demais dados operacionais. Elas funcionam como guia visual e não substituem os registros técnicos privados do projeto.
+
+### Administração e colaboração
+
+![Site de equipe anonimizado](assets/evidence/sharepoint-site-equipe-anonimizado.jpg)
+
+### Identidade e autenticação
+
+![Fluxo de MFA anonimizado](assets/evidence/mfa-authenticator-anonimizado.jpg)
+
+### DNS e autenticação de e-mail
+
+![Validação DNS anonimizada](assets/evidence/dns-exchange-anonimizado.jpg)
+
+![DKIM anonimizado](assets/evidence/dkim-anonimizado.jpg)
+
+A [galeria completa e suas limitações](docs/14-evidencias-publicas.md) registra as demais capturas tratadas. Nenhum arquivo original foi incluído no Git.
+
 ## Arquitetura lógica
 
 ```mermaid
@@ -133,7 +153,7 @@ Não são apresentadas métricas de redução de incidentes, produtividade ou ec
 - Registros antigos foram preservados por cautela operacional.
 - A evidência mais recente da pontuação de segurança não foi confirmada.
 - A autorização escrita para publicação ainda está em análise.
-- Nenhuma captura administrativa original foi aprovada para publicação.
+- As capturas incluídas são versões tratadas e não representam inventários completos do ambiente.
 
 ## Lições aprendidas
 
@@ -174,7 +194,7 @@ Não são apresentadas métricas de redução de incidentes, produtividade ou ec
 
 ## Confidencialidade
 
-Todas as informações foram reconstruídas em formato genérico. Evidências brutas, inventários, registros DNS, nomes, contas, estruturas de acesso e configurações que possam facilitar reconhecimento do ambiente permanecem fora deste repositório.
+Todas as informações foram reconstruídas em formato genérico. As imagens publicáveis foram tratadas de forma não destrutiva, tiveram metadados removidos e não preservam valores ou relações sensíveis. Evidências brutas, inventários, registros DNS, nomes, contas, estruturas de acesso e configurações que possam facilitar reconhecimento do ambiente permanecem fora deste repositório.
 
 Leia [NOTICE.md](NOTICE.md), [SECURITY.md](SECURITY.md) e [PUBLICATION-READINESS.md](PUBLICATION-READINESS.md) antes de reutilizar ou publicar qualquer conteúdo.
 
