@@ -1,69 +1,132 @@
-# Implantação Microsoft 365: Exchange Online, SharePoint Online e Entra ID
+<p align="center">
+  <img src="assets/brand/matheus-cavalcanti-logo.png" alt="Matheus Cavalcanti Advocacia e Negócios" width="700">
+</p>
 
-> Projeto profissional real, documentado com identificadores e arquitetura anonimizados. O repositório deve permanecer privado enquanto a autorização formal de publicação estiver em análise.
+# Implantação Microsoft 365 — Matheus Cavalcanti Advocacia e Negócios
 
-## Resumo executivo
+> **Divulgação autorizada:** este projeto é apresentado como parte do meu portfólio profissional com autorização da empresa envolvida. O uso do nome, identidade visual e evidências apresentadas foi autorizado para fins de demonstração profissional. Informações pessoais, credenciais e dados operacionais sensíveis foram omitidos ou censurados.
 
-Este repositório descreve a implantação de um ambiente Microsoft 365 para uma organização de serviços profissionais. A entrega reuniu identidade, e-mail corporativo, colaboração documental e controles básicos de segurança em uma plataforma integrada.
+## Identificação do projeto
 
-O trabalho foi executado por um consultor independente e abrangeu a preparação do tenant, validação de domínio, provisionamento de usuários e licenças, implantação do Exchange Online, criação de um site de equipe no SharePoint Online, organização de bibliotecas por função, controle de acesso baseado em grupos e configuração de mecanismos de proteção de identidade e e-mail.
+- **Empresa:** Matheus Cavalcanti Advocacia e Negócios (ANMC)
+- **Responsável técnico:** Gabriel Cerqueira
+- **Atuação:** Consultoria de TI — projeto independente
+- **Período:** abril–maio de 2026
+- **Status:** implantação concluída, com suporte administrativo posterior
 
-Os dados históricos do provedor de e-mail anterior e de repositórios documentais não fizeram parte da transição. O ambiente foi colocado em produção em 2026 e permanece sob suporte administrativo.
+## Contexto
 
-## Contexto anonimizado
+A empresa utilizava um serviço de e-mail externo e precisava estruturar uma plataforma corporativa para comunicação, identidade e colaboração documental.
 
-A organização utilizava um serviço de e-mail externo e não possuía uma plataforma corporativa estruturada para armazenamento e colaboração documental. O projeto buscou centralizar esses serviços no Microsoft 365, mantendo segregação lógica de acesso e reduzindo a administração manual por usuário.
+O projeto teve como objetivo implantar o Microsoft 365 como base central do ambiente, reunindo Exchange Online, Microsoft Entra ID e SharePoint Online, além de controles de segurança, autenticação multifator e configuração dos registros necessários para o domínio corporativo.
 
-Nenhum nome, domínio, endereço, grupo, biblioteca, pasta ou parâmetro real do cliente é utilizado nesta documentação.
+A implantação foi executada diretamente no ambiente de produção, com validações controladas e preservação dos serviços legados quando sua remoção pudesse gerar impacto não mapeado.
 
-## Problema identificado
+## Escopo realizado
 
-- Ausência de armazenamento corporativo centralizado.
-- Necessidade de separar documentos conforme função de trabalho.
-- Serviço de e-mail fora do ecossistema Microsoft 365.
-- Necessidade de identidade centralizada e autenticação multifator.
-- Administração de acesso sem uma documentação técnica consolidada.
-
-## Objetivos
-
-- Preparar um tenant Microsoft 365 para uso corporativo.
-- Validar um domínio personalizado sem expor seus registros reais.
-- Implantar caixas de usuário no Exchange Online.
-- Disponibilizar endereços alternativos e um grupo funcional de distribuição.
-- Criar um site de equipe privado no SharePoint Online.
-- Organizar o conteúdo em bibliotecas funcionais.
-- Associar o acesso a grupos de segurança, evitando concessões individuais como modelo principal.
-- Aplicar uma linha de base de segurança de identidade.
-- Configurar autenticação do domínio de e-mail.
-- Documentar verificações, limitações e decisões de mudança.
-
-## Escopo implementado
-
-- Configuração administrativa do Microsoft 365.
-- Adição e validação de domínio personalizado.
-- Provisionamento de identidades e licenças Microsoft 365 Business Basic.
-- Criação de caixas de usuário no Exchange Online.
-- Configuração de aliases sem exposição do inventário real.
-- Criação de lista de distribuição funcional.
-- Configuração de registros para roteamento e autenticação de e-mail.
-- Implantação de site de equipe privado no SharePoint Online.
-- Criação de bibliotecas funcionais com versionamento padronizado.
-- Criação de grupos de segurança orientados a funções.
-- Aplicação de permissões por grupos.
-- Habilitação dos Padrões de Segurança do Microsoft Entra ID.
-- Uso de autenticação multifator com Microsoft Authenticator.
-- Avaliação da postura por meio de recurso nativo do Microsoft 365.
+- Preparação e configuração administrativa do Microsoft 365.
+- Validação e configuração do domínio corporativo.
+- Provisionamento de usuários e licenças Microsoft 365 Business Basic.
+- Implantação de caixas de e-mail no Exchange Online.
+- Configuração de aliases e lista de distribuição funcional.
+- Configuração de SPF, DKIM, DMARC e Autodiscover.
+- Implantação de site de equipe no SharePoint Online.
+- Organização de bibliotecas documentais por função de negócio.
+- Versionamento de documentos.
+- Estruturação de grupos de segurança e permissões por função.
+- Habilitação de autenticação multifator com Microsoft Authenticator.
+- Aplicação dos Padrões de Segurança do Microsoft Entra ID.
+- Validação da postura de segurança com recursos nativos do Microsoft 365.
+- Habilitação e validação dos recursos administrativos de auditoria aplicáveis ao ambiente.
 - Suporte administrativo após a entrada em produção.
 
-## Fora do escopo ou não comprovado
+## Arquitetura da solução
 
-- Migração do histórico de mensagens do provedor anterior.
-- Migração documental inicial.
-- Configuração individual do Outlook para desktop.
-- Configuração de dispositivos móveis.
-- Implantação específica do OneDrive além das configurações organizacionais relacionadas.
-- Teste interativo nas contas dos colaboradores.
-- Treinamento formal de usuários.
+```mermaid
+flowchart TB
+    U["Usuários da ANMC"] --> ID["Microsoft Entra ID"]
+    ID --> EX["Exchange Online"]
+    ID --> SP["SharePoint Online"]
+    G["Grupos de segurança por função"] --> SP
+    DNS["DNS do domínio corporativo"] --> EX
+    MFA["MFA / Microsoft Authenticator"] --> ID
+    SEC["Padrões de Segurança / auditoria"] --> ID
+```
+
+A representação acima descreve os principais componentes implantados sem expor identificadores técnicos ou relações internas sensíveis.
+
+## Atividades executadas
+
+### Microsoft Entra ID e identidade
+
+- Criação e administração das identidades corporativas.
+- Associação das licenças contratadas.
+- Estruturação de grupos para administração de acesso.
+- Habilitação de MFA e Padrões de Segurança.
+- Validação administrativa do fluxo de autenticação.
+
+### Exchange Online
+
+- Provisionamento das caixas corporativas.
+- Configuração dos endereços alternativos previstos no projeto.
+- Criação da lista de distribuição funcional.
+- Validação do fluxo de mensagens após a transição.
+- Configuração e verificação dos registros de autenticação do domínio.
+
+### SharePoint Online
+
+- Criação de site de equipe privado.
+- Estruturação das bibliotecas por área de negócio.
+- Aplicação de permissões por grupos funcionais.
+- Configuração de versionamento documental.
+- Validação da organização e do acesso administrativo.
+
+### DNS e segurança de e-mail
+
+- Validação do domínio Microsoft 365.
+- Configuração de registros necessários ao Exchange Online.
+- Configuração de SPF.
+- Habilitação de DKIM.
+- Configuração inicial de DMARC.
+- Validação por console administrativo e consultas DNS.
+
+## Evidências do projeto
+
+As capturas incluídas demonstram a execução prática do projeto. A identidade da empresa pode ser apresentada por autorização expressa, porém dados pessoais, contas, IDs, URLs administrativas, valores DNS e outros elementos operacionais sensíveis continuam censurados.
+
+### SharePoint Online
+
+![Site de equipe](assets/evidence/sharepoint-site-equipe-anonimizado.jpg)
+
+### Autenticação multifator
+
+![Fluxo de MFA](assets/evidence/mfa-authenticator-anonimizado.jpg)
+
+### DNS e Exchange Online
+
+![Validação DNS](assets/evidence/dns-exchange-anonimizado.jpg)
+
+### DKIM
+
+![DKIM](assets/evidence/dkim-anonimizado.jpg)
+
+A galeria completa está disponível em [Evidências públicas](docs/14-evidencias-publicas.md).
+
+## Resultados alcançados
+
+- Microsoft 365 implantado e colocado em produção.
+- E-mail corporativo operando no Exchange Online.
+- Domínio corporativo validado e integrado ao Microsoft 365.
+- SPF, DKIM e DMARC configurados.
+- SharePoint Online disponibilizado como repositório corporativo central.
+- Estrutura documental organizada por função de negócio.
+- Permissões centralizadas em grupos de segurança.
+- Versionamento documental habilitado.
+- MFA habilitado para proteção das identidades.
+- Linha de base de segurança do Microsoft Entra ID aplicada.
+- Ambiente mantido sob suporte administrativo após a implantação.
+
+Não são atribuídas ao projeto métricas de economia, produtividade ou redução de incidentes que não tenham sido formalmente medidas.
 
 ## Tecnologias utilizadas
 
@@ -75,95 +138,33 @@ Nenhum nome, domínio, endereço, grupo, biblioteca, pasta ou parâmetro real do
 - Microsoft Secure Score
 - Microsoft Authenticator
 - DNS
-- PowerShell para consultas de resolução DNS
-- Git e GitHub para documentação técnica
+- PowerShell
+- Git e GitHub
 
-## Evidências visuais tratadas
+## Responsabilidades desempenhadas
 
-Uma seleção reduzida de capturas foi incluída para contextualizar a execução prática. Todas foram recortadas ou reconstruídas para remover nomes, contas, domínios, URLs, quantidades, valores DNS, datas, relações de acesso e demais dados operacionais. Elas funcionam como guia visual e não substituem os registros técnicos privados do projeto.
+Como responsável técnico pela implantação, atuei diretamente em:
 
-### Administração e colaboração
+- levantamento do cenário e definição do escopo técnico;
+- preparação do tenant Microsoft 365;
+- administração de identidades e licenças;
+- implantação e configuração do Exchange Online;
+- implantação e estruturação do SharePoint Online;
+- definição do modelo de grupos e permissões;
+- configuração de MFA e controles de segurança;
+- configuração e validação dos registros DNS;
+- testes administrativos e validação da entrada em produção;
+- documentação técnica da solução;
+- suporte administrativo após a implantação.
 
-![Site de equipe anonimizado](assets/evidence/sharepoint-site-equipe-anonimizado.jpg)
+## Limitações do escopo
 
-### Identidade e autenticação
+- O histórico de mensagens do provedor anterior não foi migrado.
+- A migração documental inicial não fez parte desta entrega.
+- A configuração individual do Outlook desktop e de dispositivos móveis não integrou o escopo formal.
+- Testes interativos em contas de colaboradores não foram realizados; as validações respeitaram o limite de acesso autorizado.
 
-![Fluxo de MFA anonimizado](assets/evidence/mfa-authenticator-anonimizado.jpg)
-
-### DNS e autenticação de e-mail
-
-![Validação DNS anonimizada](assets/evidence/dns-exchange-anonimizado.jpg)
-
-![DKIM anonimizado](assets/evidence/dkim-anonimizado.jpg)
-
-A [galeria completa e suas limitações](docs/14-evidencias-publicas.md) registra as demais capturas tratadas. Nenhum arquivo original foi incluído no Git.
-
-## Arquitetura lógica
-
-```mermaid
-flowchart TB
-    U["Usuários corporativos"] --> ID["Microsoft Entra ID"]
-    ID --> EX["Exchange Online"]
-    ID --> SP["SharePoint Online"]
-    SG["Grupos baseados em função"] --> SP
-    DNS["DNS do domínio"] --> EX
-    SEC["MFA e linha de base"] --> ID
-```
-
-O diagrama é conceitual. Ele não representa nomes, quantidades, relações de acesso ou parâmetros reais do ambiente.
-
-## Medidas de segurança adotadas
-
-- Padrões de Segurança do Microsoft Entra ID habilitados.
-- Autenticação multifator baseada em senha e Microsoft Authenticator.
-- Controle de acesso ao SharePoint baseado em grupos.
-- Site de equipe configurado como privado.
-- Versionamento habilitado nas bibliotecas documentais.
-- SPF, DKIM e DMARC configurados para o domínio de e-mail.
-- Princípio de não acessar caixas de colaboradores durante a validação.
-- Preservação de registros legados quando sua remoção poderia causar impacto não controlado.
-- Uso de evidências privadas separadas da documentação de portfólio.
-
-## Transição e validações
-
-A mudança para o Exchange Online foi tratada como transição de serviço, e não como migração de histórico. O roteamento de e-mail e os mecanismos de autenticação do domínio foram verificados por consoles administrativos e consultas DNS.
-
-O teste interativo de MFA foi realizado somente em uma conta administrativa autorizada. Não foram acessadas contas ou caixas de colaboradores. As demais validações foram limitadas ao estado administrativo do ambiente e ao uso operacional informado pelo responsável.
-
-Consulte [testes e validações](docs/10-testes-e-validacoes.md) e [transição de serviços](docs/09-transicao-de-servicos.md).
-
-## Resultados comprovados
-
-- Ambiente Microsoft 365 colocado em produção em 2026.
-- Serviço de e-mail corporativo operando no Exchange Online.
-- Domínio personalizado validado.
-- Organização documental implantada no SharePoint Online.
-- Acesso às bibliotecas associado a grupos funcionais.
-- Versionamento documental padronizado.
-- Linha de base de segurança de identidade habilitada.
-- Autenticação do domínio de e-mail configurada.
-- Suporte administrativo contínuo após a implantação.
-
-Não são apresentadas métricas de redução de incidentes, produtividade ou economia, pois não foram coletadas evidências que sustentem essas afirmações.
-
-## Limitações
-
-- Não houve migração do histórico de e-mails ou de documentos.
-- A validação de login ficou restrita à conta administrativa.
-- Registros antigos foram preservados por cautela operacional.
-- A evidência mais recente da pontuação de segurança não foi confirmada.
-- A autorização escrita para publicação ainda está em análise.
-- As capturas incluídas são versões tratadas e não representam inventários completos do ambiente.
-
-## Lições aprendidas
-
-- Diferenciar transição de serviço de migração de dados evita afirmações técnicas imprecisas.
-- Grupos funcionais simplificam a administração de acesso e a revisão posterior.
-- Alterações em DNS de produção devem considerar dependências não documentadas e possuir plano de reversão.
-- Validações devem respeitar privacidade, segregação de funções e autorização de acesso.
-- Uma evidência técnica útil internamente pode ser inadequada para um portfólio público.
-
-## Estrutura da documentação
+## Documentação técnica
 
 - [Visão geral](docs/01-visao-geral.md)
 - [Cenário inicial](docs/02-cenario-inicial.md)
@@ -177,29 +178,30 @@ Não são apresentadas métricas de redução de incidentes, produtividade ou ec
 - [Testes e validações](docs/10-testes-e-validacoes.md)
 - [Boas práticas de segurança](docs/11-boas-praticas-de-seguranca.md)
 - [Limitações e pendências](docs/12-limitacoes-e-pendencias.md)
-- [Lições aprendidas](docs/13-licoes-aprendidas.md)
 - [Evidências públicas](docs/14-evidencias-publicas.md)
 - [Operação e suporte](docs/15-operacao-e-suporte.md)
 
 ## Competências demonstradas
 
 - Administração Microsoft 365.
-- Microsoft Entra ID e autenticação multifator.
-- Exchange Online e segurança de e-mail.
+- Microsoft Entra ID e MFA.
+- Exchange Online.
 - SharePoint Online e governança documental.
-- DNS e validação de serviços.
+- Segurança e autenticação de e-mail.
+- DNS.
 - Controle de acesso baseado em grupos.
 - Gestão de mudanças em produção.
-- Documentação técnica e análise de confidencialidade.
+- Documentação técnica.
+- Suporte administrativo Microsoft 365.
 
-## Confidencialidade
+## Confidencialidade e autorização
 
-Todas as informações foram reconstruídas em formato genérico. As imagens publicáveis foram tratadas de forma não destrutiva, tiveram metadados removidos e não preservam valores ou relações sensíveis. Evidências brutas, inventários, registros DNS, nomes, contas, estruturas de acesso e configurações que possam facilitar reconhecimento do ambiente permanecem fora deste repositório.
+A divulgação deste projeto, incluindo a identificação da **Matheus Cavalcanti Advocacia e Negócios** e o uso de sua identidade visual, foi autorizada para fins de portfólio profissional.
 
-Leia [NOTICE.md](NOTICE.md), [SECURITY.md](SECURITY.md) e [PUBLICATION-READINESS.md](PUBLICATION-READINESS.md) antes de reutilizar ou publicar qualquer conteúdo.
+A autorização não altera os critérios de proteção de dados adotados na documentação. Permanecem fora do repositório credenciais, tokens, identificadores técnicos sensíveis, inventários completos de usuários, conteúdo de caixas postais, documentos corporativos, dados pessoais, matrizes detalhadas de acesso e demais informações que possam representar risco operacional ou exposição desnecessária do ambiente.
+
+Consulte também [NOTICE.md](NOTICE.md) e [SECURITY.md](SECURITY.md).
 
 ## Status
 
-**Implantação concluída em 2026, com suporte administrativo contínuo.**
-
-**Publicação pública bloqueada até autorização escrita e revisão final de confidencialidade.**
+**Implantação concluída em maio de 2026. Projeto autorizado para divulgação como portfólio profissional, mantendo a proteção dos dados operacionais sensíveis.**
