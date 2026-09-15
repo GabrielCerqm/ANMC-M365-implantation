@@ -22,15 +22,18 @@
 
 Esses itens são recomendações ou trabalhos futuros; não são apresentados como entregas concluídas.
 
-## Pendências de publicação
+## Publicação e portfólio
 
-- Obter autorização escrita do cliente.
-- Renomear o repositório para um identificador genérico.
-- Revisar todo o histórico do Git.
-- Confirmar que não existem arquivos brutos, anexos ou metadados sensíveis.
-- Realizar revisão humana final.
+A Matheus Cavalcanti Advocacia e Negócios autorizou a divulgação deste projeto para fins de portfólio profissional, incluindo a identificação da empresa e o uso da identidade visual.
 
-Até a conclusão desses itens, o repositório deve permanecer privado.
+A autorização não elimina os controles de confidencialidade. Antes de qualquer alteração de visibilidade do repositório, devem permanecer confirmados:
+
+- ausência de credenciais, tokens e segredos;
+- ausência de dados pessoais desnecessários;
+- ausência de conteúdo de caixas postais ou documentos corporativos;
+- tratamento das capturas que contenham identificadores técnicos sensíveis;
+- remoção de metadados desnecessários dos arquivos publicados;
+- revisão do histórico Git para evitar exposição residual.
 
 ## Risco aceito durante a implantação
 
