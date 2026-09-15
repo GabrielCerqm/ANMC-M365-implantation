@@ -2,13 +2,13 @@
 
 ## Estratégia adotada
 
-O repositório combina documentação textual, diagramas genéricos e uma seleção reduzida de capturas tratadas. Nenhum arquivo original foi incluído.
+O repositório combina documentação textual, diagramas conceituais e uma seleção de capturas tratadas do projeto executado para a **Matheus Cavalcanti Advocacia e Negócios (ANMC)**.
 
-As imagens abaixo têm finalidade ilustrativa e demonstram as interfaces e os tipos de verificação utilizados. Tarjas e substituições eliminam dados do cliente e, por isso, as capturas não devem ser usadas como inventário, matriz de acesso ou reprodução exata da configuração privada.
+A empresa autorizou a divulgação do projeto, incluindo identificação institucional e uso da marca, para fins de portfólio profissional. Ainda assim, as imagens publicadas continuam protegendo dados pessoais, credenciais, identificadores técnicos sensíveis, URLs administrativas, valores DNS e demais informações operacionais que não sejam necessárias para demonstrar o trabalho realizado.
 
-## Evidências privadas analisadas
+## Evidências analisadas
 
-Foram analisadas, exclusivamente como fonte de reconstrução:
+Foram utilizadas como base de documentação e validação:
 
 - telas de domínio e integridade DNS;
 - inventário de licenças e caixas;
@@ -23,92 +23,92 @@ Foram analisadas, exclusivamente como fonte de reconstrução:
 - estado de DKIM;
 - resolução de DMARC;
 - avaliação de postura;
-- exportação em PDF de painel DNS.
+- painel do provedor DNS.
 
-Esses arquivos não acompanham o repositório porque contêm dados pessoais, domínio, URLs, IDs, valores DNS, estrutura interna, postura de segurança ou metadados.
+Os arquivos brutos não integram o portfólio quando apresentam dados pessoais, conteúdo corporativo, credenciais, IDs, URLs administrativas ou outros elementos operacionais sensíveis.
 
 ## Galeria tratada
 
 ### Licenciamento do serviço
 
-![Licenciamento anonimizado](../assets/evidence/licenciamento-business-basic-anonimizado.jpg)
+![Licenciamento](../assets/evidence/licenciamento-business-basic-anonimizado.jpg)
 
-Preserva o produto administrado e a tela de licenciamento. Quantidades, datas, usuários e endereços foram omitidos.
+Demonstra a administração do licenciamento Microsoft 365. Quantidades, usuários, endereços e dados desnecessários à apresentação permanecem omitidos.
 
 ### Site de equipe
 
-![Site de equipe anonimizado](../assets/evidence/sharepoint-site-equipe-anonimizado.jpg)
+![Site de equipe](../assets/evidence/sharepoint-site-equipe-anonimizado.jpg)
 
-Preserva o tipo do site. Nome, URL, armazenamento, administração, atividade e demais identificadores foram removidos.
+Demonstra a implantação do site de equipe no SharePoint Online. Informações administrativas sensíveis continuam protegidas.
 
 ### Administração por grupos
 
-![Grupos de segurança anonimizados](../assets/evidence/grupos-seguranca-anonimizado.jpg)
+![Grupos de segurança](../assets/evidence/grupos-seguranca-anonimizado.jpg)
 
-Preserva o uso do recurso de grupos de segurança. Nomes reais, quantidades, endereços, datas e relações de acesso foram removidos ou substituídos por rótulos genéricos.
+Demonstra o uso de grupos de segurança para administração de acesso. Relações detalhadas de usuários e permissões não são publicadas.
 
 ### Versionamento documental
 
-![Versionamento anonimizado](../assets/evidence/sharepoint-versionamento-anonimizado.jpg)
+![Versionamento](../assets/evidence/sharepoint-versionamento-anonimizado.jpg)
 
-Preserva a interface e a confirmação visual de versionamento. Bibliotecas e parâmetros numéricos capazes de revelar a configuração detalhada foram omitidos.
+Demonstra a configuração de versionamento aplicada às bibliotecas documentais.
 
 ### Padrões de Segurança
 
-![Padrões de Segurança anonimizados](../assets/evidence/entra-padroes-seguranca-anonimizado.jpg)
+![Padrões de Segurança](../assets/evidence/entra-padroes-seguranca-anonimizado.jpg)
 
-Preserva o estado habilitado do controle confirmado no projeto. Tenant, organização e conta autenticada foram removidos.
+Demonstra o controle de segurança habilitado durante o projeto. Informações da conta autenticada e identificadores administrativos permanecem protegidos.
 
 ### Fluxo de MFA
 
-![MFA anonimizado](../assets/evidence/mfa-authenticator-anonimizado.jpg)
+![MFA](../assets/evidence/mfa-authenticator-anonimizado.jpg)
 
-Preserva a etapa de aprovação no Microsoft Authenticator. Conta e desafio numérico foram removidos; a validação foi realizada somente em conta administrativa autorizada.
+Demonstra a validação de autenticação multifator com Microsoft Authenticator realizada em contexto administrativo autorizado.
 
 ### Validação de registros DNS
 
-![DNS anonimizado](../assets/evidence/dns-exchange-anonimizado.jpg)
+![DNS](../assets/evidence/dns-exchange-anonimizado.jpg)
 
-Preserva apenas os tipos de registro e os indicadores visuais de integridade. Domínio, provedor, nomes, destinos, valores e TTL foram removidos.
+Demonstra as verificações relacionadas ao domínio e ao Exchange Online. Valores técnicos que possam ser reutilizados indevidamente não são expostos sem necessidade.
 
 ### DKIM
 
-![DKIM anonimizado](../assets/evidence/dkim-anonimizado.jpg)
+![DKIM](../assets/evidence/dkim-anonimizado.jpg)
 
-Preserva o estado válido e habilitado do domínio personalizado. Nome do domínio, domínio automático do tenant e dados auxiliares foram removidos.
+Demonstra a habilitação e validação do DKIM para o domínio corporativo.
 
 ### Consulta DMARC
 
-![Consulta DMARC anonimizada](../assets/evidence/dmarc-consulta-anonimizado.jpg)
+![Consulta DMARC](../assets/evidence/dmarc-consulta-anonimizado.jpg)
 
-Preserva o uso do `Resolve-DnsName` e a existência de resposta TXT. Domínio, resolvedor, TTL e política foram removidos integralmente.
+Demonstra o uso de consulta DNS para validar a existência e resposta do registro DMARC.
 
 ## Representações públicas complementares
 
-| Evidência técnica | Representação pública |
+| Evidência técnica | Representação no portfólio |
 |---|---|
-| Arquitetura do ambiente | Diagrama Mermaid genérico |
-| Organização documental | Diagrama com bibliotecas fictícias |
+| Arquitetura do ambiente | Diagrama Mermaid conceitual |
+| Organização documental | Diagrama e descrição funcional |
 | Fluxo de e-mail | Diagrama conceitual |
 | Segurança de identidade | Capturas tratadas e descrição dos controles confirmados |
-| DNS | Capturas tratadas e tabela de tipos de controles, sem valores |
+| DNS | Capturas tratadas e descrição dos mecanismos implantados |
 | Testes | Matriz de validação com limitações |
 | Permissões | Explicação de administração por grupos |
 
-## Capturas deliberadamente excluídas
+## Informações deliberadamente excluídas
 
-Não foram incluídas telas contendo:
+Mesmo com autorização de divulgação, permanecem fora das evidências públicas:
 
-- listas de usuários, caixas ou endereços;
-- inventário de aliases e respectivas caixas;
-- documentos, arquivos ou pastas reais;
-- lista de distribuição e seus membros;
-- proprietários do site;
-- permissões exclusivas ou matriz de acesso;
-- configuração detalhada de compartilhamento externo;
-- pontuação ou recomendações detalhadas de postura;
-- painel ou exportação original do provedor DNS.
+- credenciais, códigos de autenticação, tokens ou segredos;
+- conteúdo de caixas postais;
+- documentos, arquivos e conteúdo jurídico corporativo;
+- dados pessoais de colaboradores ou terceiros;
+- inventários completos de aliases, caixas e usuários;
+- IDs de tenant, objetos ou aplicações quando desnecessários;
+- URLs administrativas sensíveis;
+- matriz detalhada de membros e permissões;
+- informações de segurança cuja exposição possa ampliar risco operacional.
 
 ## Regra para novas imagens
 
-Uma imagem só poderá ser adicionada se for necessária, integralmente anonimizada, livre de metadados e aprovada em revisão humana. A simples aplicação de desfoque ou tarja não é suficiente quando o contexto ainda permite identificar o ambiente. A publicação pública continua condicionada à autorização escrita do cliente.
+Novas evidências podem preservar o nome e a identidade visual da ANMC dentro do escopo autorizado. Antes da inclusão, cada imagem deve ser revisada para garantir que a identificação institucional autorizada não venha acompanhada de informações pessoais, credenciais ou parâmetros operacionais sensíveis.
