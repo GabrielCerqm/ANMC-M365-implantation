@@ -2,9 +2,15 @@
 
 ## SharePoint Online
 
-Foi implantado um site de equipe privado para colaboração documental. O conteúdo foi organizado em bibliotecas funcionais, associadas a grupos baseados em função.
+Foi implantado um site de equipe privado para centralizar a colaboração documental da empresa.
 
-## Organização abstrata
+![Site de equipe no SharePoint Online](../assets/evidence/sharepoint-site-equipe-anonimizado.jpg)
+
+A captura demonstra o ambiente implantado sem expor URL, armazenamento, conta administrativa ou demais identificadores operacionais.
+
+## Organização documental
+
+O conteúdo foi estruturado em bibliotecas funcionais e o acesso foi associado a grupos baseados nas funções de trabalho.
 
 ```mermaid
 flowchart TB
@@ -16,29 +22,28 @@ flowchart TB
     GC["Grupo de Segurança C"] --> C
 ```
 
-Essa representação é ilustrativa. A quantidade, os nomes e as associações não reproduzem o ambiente real.
+O diagrama representa o modelo adotado sem reproduzir nomes ou relações internas do ambiente.
 
-## Permissões
+## Permissões por grupos
 
-- Acesso operacional associado a grupos.
-- Administração mantida por identidade proprietária dedicada.
-- Ausência declarada de concessões diretas como modelo principal.
-- Usuários com nível de edição podem criar, alterar e excluir conteúdo dentro do escopo autorizado.
+O modelo principal de acesso foi baseado em grupos, facilitando a administração e evitando concessões individuais como padrão.
 
-Permissões exclusivas de pastas ou itens sensíveis foram omitidas integralmente. Elas não devem aparecer em tabelas, diagramas, imagens ou exemplos públicos.
+![Administração por grupos](../assets/evidence/grupos-seguranca-anonimizado.jpg)
+
+Permissões exclusivas ou exceções específicas permanecem fora do portfólio.
 
 ## Versionamento
 
-As bibliotecas foram configuradas de forma padronizada com criação de versões principais. Uma biblioteca foi utilizada como amostra de inspeção, e o responsável confirmou a equivalência nas demais.
+As bibliotecas foram configuradas com versionamento de documentos. Uma biblioteca foi utilizada como evidência visual da configuração padronizada aplicada ao ambiente.
 
-Os valores exatos de retenção e parâmetros internos não são necessários para demonstrar a atividade e foram omitidos.
+![Versionamento no SharePoint Online](../assets/evidence/sharepoint-versionamento-anonimizado.jpg)
+
+Parâmetros numéricos detalhados foram omitidos por não serem necessários para demonstrar a implantação.
 
 ## Compartilhamento
 
-O site permaneceu privado. A capacidade administrativa de colaboração externa foi analisada para uso futuro, mas não havia usuários convidados no estado observado.
-
-Os parâmetros exatos de compartilhamento são tratados como postura operacional e permanecem fora da documentação pública.
+O site permaneceu privado. A capacidade de colaboração externa foi analisada administrativamente, mas não havia convidados no estado observado durante a documentação do projeto.
 
 ## OneDrive
 
-O OneDrive apareceu nas configurações organizacionais relacionadas ao compartilhamento, porém não há evidência de uma implantação individual ou projeto específico de OneDrive. Por isso, ele não é apresentado como entrega independente.
+O OneDrive esteve presente nas configurações organizacionais do Microsoft 365, porém não houve uma implantação individual ou frente específica de OneDrive neste projeto. Por isso, ele não é apresentado como entrega independente.
