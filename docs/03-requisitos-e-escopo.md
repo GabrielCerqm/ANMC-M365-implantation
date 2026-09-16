@@ -31,6 +31,12 @@
 - Revisão da postura por ferramenta nativa do Microsoft 365.
 - Suporte administrativo contínuo.
 
+### Evidência — licenciamento Microsoft 365
+
+![Licenciamento Microsoft 365 Business Basic](../assets/evidence/licenciamento-business-basic-anonimizado.jpg)
+
+A captura confirma o uso do licenciamento previsto no projeto. Quantidades, contas e demais identificadores permanecem omitidos.
+
 ## Itens não executados
 
 - Migração do histórico do provedor de e-mail anterior.
