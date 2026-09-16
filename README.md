@@ -126,8 +126,6 @@ A galeria completa está disponível em [Evidências públicas](docs/14-evidenci
 - Linha de base de segurança do Microsoft Entra ID aplicada.
 - Ambiente mantido sob suporte administrativo após a implantação.
 
-Não são atribuídas ao projeto métricas de economia, produtividade ou redução de incidentes que não tenham sido formalmente medidas.
-
 ## Tecnologias utilizadas
 
 - Microsoft 365 Admin Center
@@ -139,7 +137,6 @@ Não são atribuídas ao projeto métricas de economia, produtividade ou reduç�
 - Microsoft Authenticator
 - DNS
 - PowerShell
-- Git e GitHub
 
 ## Responsabilidades desempenhadas
 
