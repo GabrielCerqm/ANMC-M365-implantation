@@ -1,6 +1,6 @@
 # 11 — Boas práticas de segurança
 
-## Práticas efetivamente adotadas
+## Controles adotados no projeto
 
 - Linha de base de segurança habilitada no Microsoft Entra ID.
 - MFA administrativo com Microsoft Authenticator.
@@ -8,33 +8,34 @@
 - Site de equipe privado.
 - Versionamento nas bibliotecas.
 - SPF, DKIM e DMARC no domínio corporativo.
-- Separação entre evidências privadas e documentação pública.
-- Ausência de acesso às caixas dos colaboradores durante a validação.
+- Separação entre evidências privadas e documentação de portfólio.
+- Validação sem acesso às caixas dos colaboradores.
 - Preservação cautelosa de configurações de produção com dependências incertas.
 
-## Recomendações futuras
+## Evidências dos controles de identidade
 
-Os itens abaixo são recomendações e não devem ser descritos como implementados:
+| Padrões de Segurança | MFA |
+|---|---|
+| ![Padrões de Segurança](../assets/evidence/entra-padroes-seguranca-anonimizado.jpg) | ![MFA](../assets/evidence/mfa-authenticator-anonimizado.jpg) |
 
-- revisar periodicamente membros de grupos e proprietários;
-- revisar compartilhamentos externos e convidados;
-- utilizar conta administrativa separada da conta de uso cotidiano;
-- manter mais de um método de recuperação administrativa controlado;
-- revisar a postura do Microsoft Secure Score em ciclos definidos;
-- avaliar licenciamento para controles adicionais de identidade, quando necessário;
-- estabelecer processo formal de admissão, movimentação e desligamento;
-- registrar alterações de DNS com aprovação e plano de reversão;
-- revisar a política DMARC após período de observação e análise de impacto;
-- testar restauração de documentos sem utilizar conteúdo real no portfólio;
-- formalizar revisão periódica de permissões;
-- manter inventário privado dos ativos e objetos administrativos.
+Essas evidências demonstram os controles implementados sem publicar dados da conta administrativa ou do tenant.
+
+## Controle de acesso e proteção documental
+
+O modelo de grupos e o versionamento do SharePoint complementaram os controles de identidade ao reduzir concessões individuais e manter histórico de alterações nos documentos.
+
+| Grupos de segurança | Versionamento |
+|---|---|
+| ![Grupos de segurança](../assets/evidence/grupos-seguranca-anonimizado.jpg) | ![Versionamento](../assets/evidence/sharepoint-versionamento-anonimizado.jpg) |
 
 ## Menor privilégio
 
-O uso de grupos simplifica a administração, mas não garante por si só o menor privilégio. Esse princípio exige revisão periódica das associações, dos níveis de permissão e das exceções existentes.
+A administração por grupos facilita a governança, mas não representa sozinha garantia de menor privilégio. A efetividade desse princípio depende da revisão periódica das associações, níveis de acesso e exceções existentes.
 
 ## Secure Score
 
-O Microsoft Secure Score foi utilizado como referência de postura e priorização. Ele não deve ser apresentado como garantia de segurança, certificação ou comprovação isolada de que todas as recomendações foram implementadas manualmente.
+O Microsoft Secure Score foi utilizado como referência de postura e priorização. Ele não é apresentado como certificação de segurança nem como prova isolada de implementação de todos os controles recomendados.
 
-Algumas ações podem ser reconhecidas por controles equivalentes ou configurações padrão. Por isso, a documentação não atribui políticas avançadas sem evidência direta e licenciamento compatível.
+## Evolução do ambiente
+
+Revisões periódicas de grupos, compartilhamentos externos, métodos de recuperação administrativa, postura de segurança e política DMARC fazem parte da evolução natural do ambiente após a implantação inicial.
