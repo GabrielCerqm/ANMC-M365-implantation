@@ -26,15 +26,3 @@ Somente verificações sustentadas por declaração do responsável, estado admi
 ## Validação de MFA
 
 O teste autorizado confirmou o fluxo de senha seguido por Microsoft Authenticator com correspondência numérica. A captura original contém conta, URL e código temporário e, portanto, não pertence ao repositório.
-
-## Testes que não devem ser simulados retroativamente
-
-- Login nas contas de colaboradores.
-- Leitura ou envio de mensagens em nome de terceiros.
-- Alterações de permissões apenas para produzir evidência.
-- Remoção de registros DNS legados em produção.
-- Mudança da política DMARC apenas para elevar pontuação.
-
-## Validação futura recomendada
-
-Qualquer validação adicional deve utilizar conta de teste autorizada, janela de mudança, critérios de sucesso e plano de reversão. Os resultados devem ser registrados sem dados identificáveis.
