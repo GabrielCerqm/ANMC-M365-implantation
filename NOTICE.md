@@ -1,6 +1,6 @@
 # Aviso de confidencialidade e autorização de divulgação
 
-Este repositório documenta um projeto profissional real e remunerado, executado por Gabriel Cerqueira como prestação independente de serviços para a **Matheus Cavalcanti Advocacia e Negócios (ANMC)**.
+Este repositório documenta um projeto profissional real, executado por Gabriel Cerqueira como prestação independente de serviços para a **Matheus Cavalcanti Advocacia e Negócios (ANMC)**.
 
 A empresa autorizou a divulgação do projeto para fins de portfólio profissional, incluindo o uso do nome empresarial, identidade visual e evidências compatíveis com esse objetivo.
 
