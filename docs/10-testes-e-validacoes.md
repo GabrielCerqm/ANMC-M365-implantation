@@ -20,9 +20,7 @@ Somente verificações sustentadas por declaração do responsável, estado admi
 | Versionamento nas bibliotecas | Confirmado | Amostra visual e declaração do responsável | Um print representa a configuração padronizada |
 | Padrões de Segurança | Confirmado | Estado no Microsoft Entra ID | Políticas detalhadas não exportadas |
 | MFA administrativo | Confirmado | Login autorizado com Microsoft Authenticator | Somente a conta administrativa foi testada |
-| MFA individual dos colaboradores | Não validado interativamente | Restrição de privacidade | Não foram utilizadas credenciais de terceiros |
 | Envio e recebimento em cada caixa | Não confirmado formalmente | Ambiente informado como operacional | Sem acesso individual às caixas |
-| Acesso negativo por todas as funções | Não confirmado formalmente | Configuração inspecionada | Sem teste com cada perfil |
 | Secure Score atualizado | Não confirmado | Evidência atualizada válida não disponível | Valor não incorporado |
 
 ## Validação de MFA
