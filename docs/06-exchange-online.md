@@ -2,7 +2,7 @@
 
 ## Implantação
 
-O Exchange Online foi utilizado como serviço de e-mail corporativo. Foram provisionadas caixas de usuário e o domínio personalizado foi associado à operação de e-mail.
+O Exchange Online foi implantado como serviço de e-mail corporativo. Foram provisionadas caixas de usuário e o domínio personalizado foi associado à operação de e-mail da empresa.
 
 ## Objetos configurados
 
@@ -10,27 +10,28 @@ O Exchange Online foi utilizado como serviço de e-mail corporativo. Foram provi
 - Endereços alternativos associados a caixas existentes.
 - Lista de distribuição para comunicação funcional.
 
-O inventário de aliases, suas caixas correspondentes, os membros e o proprietário da lista permanecem em documentação privada. A lista de distribuição não deve ser confundida com alias ou caixa compartilhada.
+O inventário de aliases, suas caixas correspondentes e os membros da lista permanecem fora do repositório porque não são necessários para demonstrar a atividade técnica.
 
-## Objetos não configurados
+## Domínio e roteamento
 
-- Caixas compartilhadas.
-- Permissão “Enviar como”.
-- Permissão “Enviar em nome de”.
-- Encaminhamentos administrativos.
+O domínio corporativo foi validado no Microsoft 365 e os registros necessários ao funcionamento do Exchange Online foram configurados e verificados.
 
-## Domínios
+![Validação dos registros associados ao Exchange Online](../assets/evidence/dns-exchange-anonimizado.jpg)
 
-O domínio personalizado foi validado e utilizado para comunicação corporativa. O domínio técnico criado automaticamente pelo Microsoft 365 permaneceu como componente do tenant, sem uso como domínio corporativo principal.
+A captura preserva os tipos de configuração e os indicadores administrativos, enquanto domínio, destinos, valores e demais parâmetros operacionais permanecem censurados.
 
-A ausência de chaves DKIM próprias no domínio técnico automático não foi tratada como falha do domínio personalizado.
+A autenticação do domínio é detalhada em [08 — Segurança de e-mail](08-seguranca-de-email.md).
 
 ## Histórico de mensagens
 
-O histórico mantido no provedor anterior não foi migrado. A decisão ocorreu porque esses dados não foram considerados relevantes para o novo ambiente. Assim, a entrega é descrita como implantação e transição do serviço, não como migração de conteúdo IMAP ou PST.
+O histórico mantido no provedor anterior não foi migrado. A entrega corresponde à implantação e transição do serviço, e não a uma migração de conteúdo IMAP ou PST.
 
-## Validação e privacidade
+## Validação
 
-Não foram acessadas caixas de colaboradores para realizar testes interativos. O estado das caixas foi verificado administrativamente e o ambiente foi informado como operacional pelo responsável.
+O estado das caixas e objetos foi verificado administrativamente. Não foram acessadas caixas de colaboradores para produzir testes ou capturas de conteúdo.
 
-Não há evidência suficiente para afirmar configuração individual de Outlook desktop ou dispositivos móveis.
+A configuração individual do Outlook desktop e de dispositivos móveis não integrou o escopo documentado.
+
+## Resultado
+
+O Exchange Online passou a operar como plataforma corporativa de e-mail, integrado ao domínio e às identidades provisionadas no Microsoft 365.
