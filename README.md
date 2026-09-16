@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="assets/brand/matheus-cavalcanti-logo.png" alt="Matheus Cavalcanti Advocacia e Negócios" width="700">
-</p>
+![Matheus Cavalcanti Advocacia e Negócios](./assets/brand/matheus-cavalcanti-logo.png)
 
 # Implantação Microsoft 365 — Matheus Cavalcanti Advocacia e Negócios
 
@@ -94,23 +92,13 @@ A representação acima descreve os principais componentes implantados sem expor
 
 As capturas incluídas demonstram a execução prática do projeto. A identidade da empresa pode ser apresentada por autorização expressa, porém dados pessoais, contas, IDs, URLs administrativas, valores DNS e outros elementos operacionais sensíveis continuam censurados.
 
-### SharePoint Online
+| SharePoint Online | Autenticação multifator |
+|---|---|
+| ![Site de equipe](assets/evidence/sharepoint-site-equipe-anonimizado.jpg) | ![Fluxo de MFA](assets/evidence/mfa-authenticator-anonimizado.jpg) |
+| **DNS / Exchange Online** | **DKIM** |
+| ![Validação DNS](assets/evidence/dns-exchange-anonimizado.jpg) | ![DKIM](assets/evidence/dkim-anonimizado.jpg) |
 
-![Site de equipe](assets/evidence/sharepoint-site-equipe-anonimizado.jpg)
-
-### Autenticação multifator
-
-![Fluxo de MFA](assets/evidence/mfa-authenticator-anonimizado.jpg)
-
-### DNS e Exchange Online
-
-![Validação DNS](assets/evidence/dns-exchange-anonimizado.jpg)
-
-### DKIM
-
-![DKIM](assets/evidence/dkim-anonimizado.jpg)
-
-A galeria completa está disponível em [Evidências públicas](docs/14-evidencias-publicas.md).
+A galeria completa está disponível em [Evidências públicas](docs/14-evidencias-publicas.md). As páginas técnicas abaixo também apresentam cada evidência junto da configuração correspondente.
 
 ## Resultados alcançados
 
