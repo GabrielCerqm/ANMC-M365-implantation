@@ -1,10 +1,10 @@
 # 09 — Transição de serviços
 
-## Classificação correta
+## Classificação da atividade
 
-A atividade realizada deve ser classificada como implantação e transição do serviço de e-mail. Não houve migração de mensagens históricas nem importação de arquivos PST ou transferência IMAP.
+A atividade realizada correspondeu à implantação e transição do serviço de e-mail para o Exchange Online. Não houve migração de mensagens históricas, importação de arquivos PST ou transferência de conteúdo por IMAP.
 
-Também não houve migração documental inicial, pois não existia um acervo de origem definido para esse fim.
+Também não houve migração documental inicial para o SharePoint, pois esse trabalho não fazia parte do escopo definido.
 
 ## Processo executado
 
@@ -18,14 +18,20 @@ flowchart TB
     F --> G["Validações e suporte"]
 ```
 
+### Validação durante a transição
+
+![Validação dos registros do Microsoft 365](../assets/evidence/dns-exchange-anonimizado.jpg)
+
+A evidência acima representa a etapa de validação do domínio e dos registros associados ao novo serviço, com os valores operacionais sensíveis removidos.
+
 ## Dados históricos
 
-Os dados do serviço anterior não foram considerados necessários para a nova operação. A documentação não afirma perda zero, migração integral ou equivalência de conteúdo, pois nenhuma dessas atividades ocorreu.
+Os dados do provedor anterior permaneceram fora da nova implantação. Por isso, o projeto não afirma migração integral ou equivalência de conteúdo entre os ambientes.
 
-## Continuidade
+## Continuidade operacional
 
-Registros legados potencialmente associados a outros serviços foram preservados. A remoção sem inventário, aprovação e plano de reversão poderia introduzir indisponibilidade fora do escopo do projeto.
+Registros legados potencialmente associados a outros serviços foram preservados quando suas dependências não estavam completamente mapeadas. A decisão priorizou a continuidade do ambiente de produção.
 
-## Resultado conhecido
+## Resultado
 
-O Exchange Online passou a operar como plataforma de e-mail corporativo. A continuidade posterior foi acompanhada por suporte administrativo, sem acesso indevido às caixas dos colaboradores.
+O Exchange Online passou a operar como plataforma corporativa de e-mail e a continuidade posterior foi acompanhada por suporte administrativo.
