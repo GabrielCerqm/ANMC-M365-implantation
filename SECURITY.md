@@ -2,32 +2,37 @@
 
 ## Escopo desta versão
 
-Este repositório apresenta exclusivamente a versão anonimizada de um projeto profissional real. A publicação foi estruturada para demonstrar as atividades executadas sem identificar a organização, seus usuários ou sua infraestrutura.
+Este repositório documenta um projeto profissional real executado para a **Matheus Cavalcanti Advocacia e Negócios (ANMC)**. A empresa autorizou a divulgação do projeto para fins de portfólio, incluindo sua identificação e o uso da identidade visual.
+
+A autorização de divulgação não transforma informações operacionais do ambiente em dados públicos. A documentação foi estruturada para demonstrar as atividades executadas preservando dados pessoais, credenciais e parâmetros técnicos cuja exposição não é necessária ao portfólio.
 
 ## Informações excluídas
 
-Os seguintes elementos permaneceram na documentação privada do projeto:
+Permanecem fora da versão pública:
 
 - credenciais, tokens, cookies, códigos MFA e chaves;
-- identificadores de tenant, aplicações e objetos;
-- nomes, e-mails e demais dados pessoais;
-- domínios, endereços IP, hostnames e URLs reais;
-- inventários de usuários, caixas, grupos e licenças;
-- valores de registros DNS;
-- matrizes reais de permissões;
+- identificadores sensíveis de tenant, aplicações e objetos;
+- nomes, e-mails e demais dados pessoais de colaboradores ou terceiros;
+- endereços IP, hostnames, URLs administrativas e identificadores internos;
+- inventários completos de usuários, caixas, aliases, grupos e licenças;
+- valores detalhados de registros DNS;
+- matrizes completas de permissões e associações internas;
 - relatórios administrativos, logs, backups e arquivos PST;
-- documentos e evidências originais do cliente.
+- conteúdo de e-mails, documentos e arquivos corporativos;
+- evidências brutas que revelem informações além do necessário para o portfólio.
 
 ## Tratamento aplicado às evidências
 
-As capturas selecionadas foram exportadas como novos arquivos. O tratamento removeu barras de endereço, contas autenticadas, tenant, avatares, datas, quantidades, valores de configuração, relações de acesso e metadados incorporados.
+As capturas publicadas foram selecionadas para demonstrar configurações específicas. Elementos como contas autenticadas, URLs, tenant, avatares, dados pessoais, valores operacionais e relações internas foram removidos quando não eram necessários para a demonstração.
 
-As imagens finais foram utilizadas apenas quando acrescentavam comprovação visual a uma atividade descrita. Os demais elementos técnicos foram representados por texto, tabelas e diagramas genéricos.
+A identificação institucional autorizada pode ser apresentada, mas isso não altera o tratamento dos demais dados.
 
 ## Separação documental
 
-As evidências originais e os inventários operacionais permaneceram fora do Git. O repositório não contém branches, releases, issues ou artefatos com versões não anonimizadas.
+Evidências completas e inventários operacionais permanecem armazenados separadamente e não fazem parte deste repositório.
 
 ## Limites da documentação pública
 
-As evidências publicadas confirmam o uso das interfaces e os estados administrativos descritos, mas não reproduzem o ambiente, a matriz de acesso nem a postura completa de segurança da organização.
+As evidências confirmam o uso das interfaces e os estados administrativos descritos, mas não devem ser interpretadas como reprodução integral do ambiente, de sua matriz de acesso ou de sua postura completa de segurança.
+
+Consulte também [NOTICE.md](NOTICE.md) para os termos de autorização e uso da marca.
