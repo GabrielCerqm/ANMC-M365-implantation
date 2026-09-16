@@ -11,15 +11,27 @@
 - O OneDrive não foi documentado como implantação independente.
 - Não foram coletadas métricas quantitativas de benefício.
 
-## Publicação e portfólio
+## Situação da publicação
 
-A Matheus Cavalcanti Advocacia e Negócios autorizou a divulgação deste projeto para fins de portfólio profissional, incluindo a identificação da empresa e o uso da identidade visual.
+A **Matheus Cavalcanti Advocacia e Negócios** autorizou a divulgação deste projeto para fins de portfólio profissional, incluindo a identificação da empresa e o uso de sua identidade visual.
 
-A autorização não elimina os controles de confidencialidade. Antes de qualquer alteração de visibilidade do repositório, devem permanecer confirmados:
+A revisão do repositório antes da publicação confirmou os seguintes pontos:
 
-- ausência de credenciais, tokens e segredos;
-- ausência de dados pessoais desnecessários;
-- ausência de conteúdo de caixas postais ou documentos corporativos;
-- tratamento das capturas que contenham identificadores técnicos sensíveis;
-- remoção de metadados desnecessários dos arquivos publicados;
-- revisão do histórico Git para evitar exposição residual.
+| Verificação | Situação |
+|---|---|
+| Autorização para nome e identidade visual | Confirmada |
+| Credenciais, tokens e segredos no branch atual | Não identificados |
+| Documentos, caixas postais ou conteúdo corporativo no branch atual | Não identificados |
+| Evidências publicadas | Versões tratadas e destinadas ao portfólio |
+| Branches adicionais | Nenhum; somente `main` |
+| Issues públicas ou privadas associadas ao repositório | Nenhuma |
+| Releases | Nenhuma |
+| Proteção por `.gitignore` para arquivos sensíveis | Configurada |
+| Estrutura dos marcos iniciais do histórico Git | Revisada; criada desde o início como documentação anonimizada |
+| Identificação institucional | Permitida pela autorização recebida |
+
+## Verificação final antes da mudança de visibilidade
+
+Antes de alterar o repositório de privado para público, permanece necessária uma inspeção visual final, em resolução original, de cada captura em `assets/evidence/` e da logomarca renderizada no README. Essa conferência deve garantir que nenhuma imagem contenha dados pessoais, credenciais, URLs administrativas, identificadores de tenant, valores DNS desnecessários ou outros detalhes operacionais não previstos na autorização.
+
+Essa etapa é uma validação final do material visual, não uma pendência de autorização do projeto.
