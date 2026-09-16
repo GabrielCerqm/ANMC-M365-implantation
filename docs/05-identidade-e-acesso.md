@@ -1,49 +1,47 @@
 # 05 — Identidade e acesso
 
-## Modelo de identidade
+## Identidades e licenciamento
 
-As contas de usuário foram provisionadas no Microsoft 365 e receberam licenciamento compatível com os serviços web de e-mail e colaboração. O domínio técnico criado automaticamente pelo Microsoft 365 não foi adotado como identidade corporativa de comunicação.
+As contas corporativas foram provisionadas no Microsoft 365 e receberam licenciamento compatível com os serviços de e-mail e colaboração utilizados no projeto.
 
-## Controle de acesso
+![Licenciamento Microsoft 365](../assets/evidence/licenciamento-business-basic-anonimizado.jpg)
 
-O SharePoint foi organizado utilizando grupos associados a funções. O modelo público pode ser representado assim:
+A evidência acima apresenta o produto administrado sem expor usuários, endereços ou quantidades do ambiente.
 
-| Elemento genérico | Papel |
-|---|---|
-| Grupo de Segurança A | Acesso a uma biblioteca funcional |
-| Grupo de Segurança B | Acesso a outra biblioteca funcional |
-| Grupo de Segurança C | Acesso a conteúdo compartilhado internamente |
-| Grupo de proprietários | Administração do site |
+## Controle de acesso por grupos
 
-A tabela não representa nomes, quantidades ou relações reais do ambiente.
+O acesso ao SharePoint foi estruturado por grupos associados às funções de trabalho, evitando utilizar concessões diretas a usuários como modelo principal de administração.
 
-O responsável declarou que concessões diretas a usuários não foram utilizadas como modelo de permissão. Detalhes de permissões exclusivas e exceções internas foram deliberadamente excluídos.
+![Grupos de segurança no Microsoft 365](../assets/evidence/grupos-seguranca-anonimizado.jpg)
+
+Os nomes e as associações reais foram omitidos da versão pública. O objetivo da captura é demonstrar a utilização prática do modelo baseado em grupos.
 
 ## Administração
 
-Uma identidade administrativa dedicada foi associada à propriedade do site. A documentação pública não registra endereço, nome, quantidade de administradores ou associação a funções do tenant.
+Uma identidade administrativa dedicada foi utilizada nas atividades de implantação e validação. Dados da conta, funções administrativas e identificadores do tenant permanecem fora do portfólio.
 
 ## Padrões de Segurança
 
-Os Padrões de Segurança do Microsoft Entra ID foram confirmados como habilitados. Essa configuração fornece uma linha de base de proteção para identidades no licenciamento disponível.
+Os Padrões de Segurança do Microsoft Entra ID foram habilitados como linha de base de proteção de identidade compatível com o ambiente implantado.
 
-Não foram documentadas políticas personalizadas de Acesso Condicional ou Identity Protection, pois não há evidência de que tenham sido implementadas.
+![Padrões de Segurança do Microsoft Entra ID](../assets/evidence/entra-padroes-seguranca-anonimizado.jpg)
 
-## MFA
+Não são atribuídas ao projeto políticas personalizadas de Acesso Condicional ou Identity Protection sem evidência de implementação e licenciamento compatível.
 
-O método observado na validação administrativa foi:
+## Autenticação multifator
 
-1. autenticação com senha;
-2. solicitação no Microsoft Authenticator;
-3. correspondência numérica para aprovação.
+A validação administrativa confirmou o fluxo de autenticação com senha seguido de aprovação pelo Microsoft Authenticator com correspondência numérica.
 
-O teste foi realizado somente na conta administrativa autorizada. Não foram acessadas contas de colaboradores. Portanto, a documentação diferencia a configuração organizacional habilitada da validação interativa individual.
+![Validação de MFA com Microsoft Authenticator](../assets/evidence/mfa-authenticator-anonimizado.jpg)
 
-## Princípios de segurança
+O teste interativo foi realizado somente em conta administrativa autorizada. Contas de colaboradores não foram acessadas para produzir evidências.
 
-- Administração por grupos.
+## Controles demonstrados
+
+- Administração de identidades no Microsoft 365.
+- Licenciamento de usuários.
+- Controle de acesso baseado em grupos.
 - Identidade administrativa dedicada.
-- MFA para acesso administrativo.
-- Não utilização de credenciais de terceiros em testes.
-- Registro das limitações de validação.
-- Ausência de inventários reais no repositório.
+- Padrões de Segurança habilitados.
+- MFA com Microsoft Authenticator.
+- Validação respeitando os limites de acesso autorizados.
