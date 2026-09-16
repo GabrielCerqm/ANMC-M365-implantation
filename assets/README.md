@@ -1,22 +1,29 @@
 # Recursos visuais
 
-Este diretório é reservado exclusivamente para recursos preparados para publicação.
+Este diretório reúne apenas recursos preparados para a versão de portfólio do projeto.
 
-## Conteúdo atual
+## Estrutura
 
-`evidence/` contém uma seleção pequena de capturas tratadas para demonstrar visualmente as interfaces e verificações utilizadas. Nenhum arquivo original pertence ao repositório.
+- `brand/` — identidade visual da Matheus Cavalcanti Advocacia e Negócios utilizada com autorização da empresa para identificação deste case.
+- `evidence/` — capturas técnicas tratadas para demonstrar configurações e validações realizadas.
 
-Os arquivos foram exportados como novas imagens, com metadados removidos. Nomes, contas, domínios, URLs, quantidades, datas, valores DNS, parâmetros operacionais e relações de acesso foram omitidos ou substituídos por elementos genéricos.
+## Identidade visual
 
-## Requisitos para qualquer imagem
+A logomarca é utilizada exclusivamente para contextualizar o projeto profissional autorizado. Sua presença neste repositório não concede licença de reutilização da marca por terceiros.
 
-- origem e finalidade documentadas;
-- conteúdo necessário para comprovar uma atividade;
-- remoção completa de dados identificáveis;
-- remoção de barra de endereço, tenant, conta e avatares;
-- remoção de valores de configuração e relações de acesso;
-- metadados eliminados;
-- revisão humana antes do commit;
-- autorização de publicação confirmada.
+## Evidências técnicas
 
-Arquivos brutos e a correspondência entre dados reais e rótulos genéricos devem permanecer fora do Git.
+As capturas foram exportadas como novas imagens e tratadas para remover informações que não são necessárias ao portfólio, como contas, domínios técnicos, URLs administrativas, identificadores, valores DNS, parâmetros operacionais e relações internas de acesso.
+
+## Critérios para imagens publicadas
+
+- finalidade técnica clara;
+- pertinência para comprovar uma atividade executada;
+- ausência de credenciais, dados pessoais e conteúdo corporativo;
+- remoção de contas, URLs administrativas e identificadores técnicos desnecessários;
+- remoção de valores de configuração cuja exposição não agregue ao portfólio;
+- metadados revisados;
+- revisão humana antes da publicação;
+- conformidade com a autorização concedida pela empresa.
+
+Arquivos brutos e evidências operacionais completas permanecem fora do Git.
